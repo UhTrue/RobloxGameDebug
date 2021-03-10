@@ -20,7 +20,7 @@ local function import(asset)
     elseif web then
         assets = { loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/" .. user .. "/RobloxGameDebug/revision/" .. asset .. ".lua"), asset .. '.lua')() }
     else
-        assets = { loadstring(readfile("hydroxide/" .. asset .. ".lua"), asset .. '.lua')() }
+        assets = { loadstring(readfile("RobloxGameDebug/" .. asset .. ".lua"), asset .. '.lua')() }
     end
     
     importCache[asset] = assets
