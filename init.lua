@@ -4,7 +4,7 @@ if oh then
     oh.Exit()
 end
 
-local web = true
+local web = false
 local user = "UhTrue" -- change if you're using a fork
 local importCache = {}
 
